@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<title>Random Webpage</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css" />
 	</head>
+	
 	<body>
 	<div style="overflow:scroll">
-		<div class="heroback">
-			<header>
-			
+		<div class="heroback"><!-- this div contains the background for hero section. -->
+			<header style="position:fixed;width:100%;background:#545957;">
+				<!-- the header has been divided into left and right -->
+				<!-- the left part contains the heading for the page -->
 				<div class="headerleft">
 					<h1><a href="index.html">Some Heading</a></h1>
 				</div>
-				
+				<!-- the right part contains the navigation menu for the page -->
 				<div class="headerright">
 					<nav>
 						<ul>
@@ -23,9 +27,19 @@
 							<li><a href="#social" class="btn">social</a></li>
 						</ul>
 					</nav>
-				</div>
-				
+				</div>	
 			</header>
+			<!-- since the header the was made fixed the hero was 
+			floating to the top this div section is to compensate for the blank space left by making the header fixed -->
+			<div>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</div>
+			<!-- this is hero section. a background with 20% opacity 
+			was added to make the text more readable. -->
 			<div style="background-color:rgba(46,52,54,0.2);">
 				<div class="hero">
 					I Am Supposed To Be Hero <br />
@@ -33,15 +47,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- heroback ends here and the grid 960 starts here -->
 		<div id="animals" class="animals">
 			<div class="container_12">
-			
-				<div class="grid_6">
-					<img src="images/a2.jpg" alt=""/>
-					<img src="images/a1.jpg" alt=""/>
-				</div>
-				
-				<div class="grid_3">
+				<div class="grid_3"><!-- left section column1 -->
 					<h2>
 						Cheetahs
 					</h2>
@@ -62,7 +71,7 @@
 					</p>
 				</div>
 				
-				<div class="grid_3">
+				<div class="grid_3"> <!-- left section column 2 -->
 					<h2>
 						Hyenas
 					</h2>
@@ -85,13 +94,25 @@
 					other feliforms.
 					</p>
 				</div>
-				
+				<!-- right section divided into 3 rows -->
+				<div class="grid_6" style="content:overflow;max-height: inherit;">
+					<div>
+						<img alt="" src="images/a1.jpg">
+					</div>
+					<div>
+						<img alt="" src="images/a3.jpg">
+					</div>
+					<div>
+						<img alt="" src="images/a2.jpg">
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- footer starts -->
 		<div class="foot">
 		<footer>
 			<div class="container_12" >
-				<div id="contact" class="grid_6">
+				<div id="contact" class="grid_6"><!-- left side of footer contains form -->
 					<h2>
 						Contact Us
 					</h2>
@@ -105,22 +126,14 @@
 						<input type="submit" value="Submit">
 					</form>
 				</div>	
-				<div id="social" class="grid_6">
+				<div id="social" class="grid_6 social"><!-- right side of the footer contains socials -->
 					<h2>
 						Social
 					</h2>
-					 <table style="width:100%">
-						  <tr>
-						    <td>
-						    	<a href="https://www.facebook.com/"><img alt="" src="../icons/facebook-128.ico"></a>
-						    </td>
-						    <td><a href="https://plus.google.com/discover"><img alt="" src="../icons/google-plus-128.ico"> </a></td>
-						  </tr>
-						  <tr>
-						    <td><a href="https://in.pinterest.com/"><img alt="" src="../icons/pinterest-128.ico"> </a></td>
-						    <td><a href="https://twitter.com/login?lang=en"><img alt="" src="../icons/twitter-128.ico"> </a></td>
-						  </tr>
-					</table> 
+					<a href="https://github.com/"><i class="fa fa-github fa-5x" aria-hidden="true"></i>&#160; github</a><br />
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i>&#160; facebook</a><br />
+					<a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i>&#160; twitter</a><br />
+					<a href="https://plus.google.com/discover"><i class="fa fa-google-plus-official fa-5x" aria-hidden="true"></i>&#160; google+</a><br />
 				</div>
 			</div>
 		</footer>
